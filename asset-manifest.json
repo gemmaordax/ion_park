@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/ion_park/static/css/main.41664f74.css",
-    "main.js": "/ion_park/static/js/main.58a02829.js",
-    "static/js/787.da8ac3e1.chunk.js": "/ion_park/static/js/787.da8ac3e1.chunk.js",
+    "main.js": "/ion_park/static/js/main.b11e69e0.js",
     "static/media/background_home.svg": "/ion_park/static/media/background_home.e0ac1437a386b31445342866971aaa53.svg",
     "static/media/mobile-app.png": "/ion_park/static/media/mobile-app.0ef256761c95e23cc780.png",
     "static/media/empresa.png": "/ion_park/static/media/empresa.aa402891cdfa088ce96b.png",
@@ -49,11 +48,10 @@
     "static/media/polygon.svg": "/ion_park/static/media/polygon.9d688ab039d0b9626f70a27d6670cd8b.svg",
     "static/media/empty.svg": "/ion_park/static/media/empty.14fe1abc50c5190900e0ddc3a7194ec7.svg",
     "main.41664f74.css.map": "/ion_park/static/css/main.41664f74.css.map",
-    "main.58a02829.js.map": "/ion_park/static/js/main.58a02829.js.map",
-    "787.da8ac3e1.chunk.js.map": "/ion_park/static/js/787.da8ac3e1.chunk.js.map"
+    "main.b11e69e0.js.map": "/ion_park/static/js/main.b11e69e0.js.map"
   },
   "entrypoints": [
     "static/css/main.41664f74.css",
-    "static/js/main.58a02829.js"
+    "static/js/main.b11e69e0.js"
   ]
 }
