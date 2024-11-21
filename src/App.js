@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        <BrowserRouter>
+        
           <Routes>
             <Route path="/" element={<Navbar />}>
               <Route index element={<Home />} />
@@ -37,7 +37,7 @@ function App() {
               <Route path="noPayment" element={<NoPayment />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+     
       </div>
       <Footer />
     </div>
