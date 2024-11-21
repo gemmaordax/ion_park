@@ -1,0 +1,78 @@
+/* ----- FOOTER -----*/
+
+/* barra */
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 149px;
+  left: 0px;
+  bottom: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: var(--white);
+  font-family: var(--font-family-text);
+  color: var(--text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Parte legal izquierda */
+.footer-left {
+  position: absolute;
+  letter-spacing: 0.05em;
+}
+
+.footer-left ul li {
+  margin: 20px;
+}
+
+.footer-left ul {
+  text-align: left;
+}
+
+.footer-left a {
+  display: inline;
+}
+
+/* Parte ISO derecha */
+.footer-right {
+  position: absolute;
+  right: 0;
+}
+
+.footer-right li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.iso {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.ens {
+  width: 51px;
+  height: 51px;
+  margin-left: 10px;
+}
+
+/* configuración al reducir pantalla */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    height: 230px;
+  }
+  .footer-left {
+    margin-bottom: 250px;
+  }
+  .footer-right {
+    position: static;
+    margin: 110px auto;
+  }
+}

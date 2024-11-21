@@ -1,0 +1,10 @@
+/* ----- VARIAABLES -----*/
+
+:root {
+    --font-family-title: "Exo 2";
+    --font-family-text: "Dosis";
+    --font-family-logo: "Korataki";
+    --text-color: rgba(33, 33, 33, 0.9);
+    --red: rgba(233, 54, 54, 0.9);
+    --white: #f9f9f9;
+  }

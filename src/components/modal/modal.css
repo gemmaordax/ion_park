@@ -1,0 +1,206 @@
+/* Estilos para el contenido del modal */
+
+.filter-dates {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.filter-form-container h4 {
+  color: rgba(33, 33, 33, 0.75);
+}
+.filter-form-divider {
+  flex: 0 0 1px;
+  background-color: #ccc;
+  margin: 5px 30px;
+}
+.filter-form label {
+  font-family: var(--font-family-text);
+  text-align: left;
+  padding-bottom: 10px;
+  justify-content: left;
+}
+.filter-form input {
+  font-family: var(--font-family-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: rgba(33, 33, 33, 0.75);
+}
+.filter-column {
+  flex: 0 0 calc(29% - 10px);
+}
+
+.date-time-container {
+  display: flex;
+  align-items: center;
+}
+.date-time-container img {
+  margin-right: 8px;
+}
+
+.filter-vehicle {
+  /*padding-top: 35px;*/
+  padding-top: 25px;
+  text-align: left;
+  width: 100%;
+
+}
+.modal .filter-services{
+  padding-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.modal .button-seleccion {
+  padding: 0;
+  padding-top: 20px;
+  height: 120px; 
+  overflow: hidden;
+}
+.modal .filter-services .button-seleccion {
+  height: 140px; 
+}
+.final-button-container {
+  display: flex;
+  padding-top: 20px;
+  justify-content: flex-end !important;
+
+}
+
+.search-button {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(33, 33, 33, 0.9);
+  border: 1px solid rgba(33, 33, 33, 0.9);
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+}
+
+.calendarIcon {
+  width: auto;
+  height: 17px;
+}
+
+.modal .react-datepicker-wrapper,
+.modal .react-datepicker__input-container,
+.modal .react-datepicker__input-container input {
+  width: 130px;
+  font-family: var(--font-family-text);
+}
+
+.clockIcon {
+  width: auto;
+  height: 17px;
+}
+.priceRange {
+  padding-top: 35px;
+  text-align: left;
+  width: 100%;
+}
+
+.pricefilter {
+  padding: 100px 30px 20px 0px;
+}
+.modal .button-text {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: var(--font-family-text);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.modal button.hovered img {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.modal .button-seleccion button.selected,
+.modal .button-seleccion button.selected:hover {
+  filter: none;
+}
+
+
+/* configuración al reducir pantalla tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal {
+    transform: scale(0.85);
+  }
+  .filter-dates .column{
+    margin-top: 0;
+  }
+
+}
+
+/* configuración al reducir pantalla movil */
+@media (max-width: 768px) {
+  .modal {
+    transform: scale(0.85);
+    min-width: 350px;
+  }
+  .filter-form-divider {
+    display: none;
+  }
+  .filter-dates {
+    flex-wrap: wrap;
+  }
+  
+}
+
+
+/* ------------------ PRICEFILTER ------------------  */
+
+.price-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 100%;
+padding: 30px 10px 20px 0px;
+
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price-range {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.5);
+}
+.price-range p{
+  font-family: var(--font-family-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 20px;
+}
+.handle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #f9f9f9;
+  border: 1px solid #2c2c2c;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  align-items: center;
+}

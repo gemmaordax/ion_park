@@ -1,0 +1,152 @@
+/* ----- CONTACTO -----*/
+
+.login {
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-form {
+  padding: 20px;
+  width: 494px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0;
+}
+
+.eye {
+  width: 32px;
+  height: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+.eye:hover {
+  width: 32px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+
+.login-form fieldset {
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.login-form legend {
+  padding: 0px 10px 0px 10px;
+  font-family: var(--font-family-title);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-form input,
+.login-form textarea {
+  width: calc(100% - 16px);
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  font-family: var(--font-family-text);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  padding-left: 10px;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: var(--red);
+  color: white;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 2px solid var(--red);
+  color: var(--red);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px 5px 25px;
+}
+.register-button {
+  border: 2px solid var(--text-color) !important;
+  color: var(--text-color) !important;
+}
+
+.register-button:hover {
+  border: 2px solid var(--red) !important;
+  color: var(--white) !important;
+}
+
+
+.forget-pass p {
+  margin-top: 30px;
+  font-family: var(--font-family-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.login-divider {
+  margin: 35px 0 35px 0;
+  width: 494px;
+  border: 1px solid rgba(33, 33, 33, 0.25);
+}
+.password-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+}
+.password-input-container button {
+  margin-right: 15px;
+}
+.password-input-container button:hover {
+  margin-right: 15px;
+}
+
+.password-input-container input {
+  margin-right: 8px;
+}
+
+/* configuración al reducir pantalla movil */
+@media (max-width: 768px) {
+  .login-form {
+    width: 420px;
+ 
+  }
+  .login-divider {
+    width: 420px;
+  }
+
+}

@@ -1,0 +1,348 @@
+.payment {
+  display: flex;
+  margin-top: 93px;
+}
+
+.container-left,
+.container-mid,
+.container-right {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.container-left {
+  width: 30%;
+  border-right: 1px solid rgba(33, 33, 33, 0.1);
+}
+
+.container-mid {
+  width: 45%;
+}
+
+.container-right {
+  width: 25%;
+  border-left: 1px solid rgba(33, 33, 33, 0.1);
+}
+
+/*----------------- CONTENEDOR CENTRAL ----------------- */
+.formulario-reserva {
+  padding: 20px;
+}
+
+.formulario-vehiculo {
+  padding: 20px;
+}
+
+.formulario-reserva h4 {
+  text-align: left;
+}
+
+.formulario-vehiculo h4 {
+  text-align: left;
+}
+
+.form-reserva {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-reserva fieldset {
+  width: 48%;
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  border-radius: 15px;
+  margin-bottom: 16px;
+  padding-left: 10px;
+}
+
+.long-fieldset {
+  width: 100% !important;
+  height: 115px;
+}
+
+.short-fieldset {
+  width: 24% !important;
+}
+
+.form-reserva legend {
+  padding: 0px 10px 0px 10px;
+  font-family: var(--font-family-title);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.form-reserva label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-reserva input {
+  width: calc(100% - 16px);
+  padding-bottom: 8px;
+  box-sizing: border-box;
+
+  font-family: var(--font-family-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  padding-left: 10px;
+}
+
+.button-seleccion {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+
+}
+
+.button-seleccion button {
+  padding-right: 10px;
+}
+
+.button-seleccion img {
+  width: 75px;
+  height: 75px;
+  max-width: 100%;
+}
+
+.button-text {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: var(--font-family-text);
+}
+
+button.hovered img {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.button-seleccion button.selected,
+.button-seleccion button.selected:hover {
+  filter: none;
+}
+
+
+.form-reserva input[id="caduc"] {
+  background-image: url("../../img/icons/date.svg");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 0;
+  padding-left: 23px;
+  margin-left: 10px;
+}
+
+.form-reserva input[id="terminos"] {
+  font-family: var(--font-family-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+.checkbox-container label {
+  text-align: left;
+  font-family: var(--font-family-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+
+.checkbox-container input[type="checkbox"] {
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  border-radius: 3px;
+  height: 16px;
+  width: 16px;
+  margin-right: 12px;
+  margin-top: 2px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.checkbox-container input[type="checkbox"]:checked::before {
+  content: "\2713";
+  /* Unicode para el símbolo de "check" */
+  color: var(--white);
+  font-size: 15px;
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+/*----------------- CONTENEDOR DERECHO ----------------- */
+.form-summary {
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: left;
+  margin-right: 80px;
+}
+
+.form-summary h4 {
+  padding-bottom: 5px;
+}
+
+.sum-divider {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sum-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sum-button button[type="submit"]:hover {
+  background-color: var(--white);
+  color: var(--red);
+}
+
+.sum-button button[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px 5px 25px;
+}
+
+.sum-button h5 {
+  font-weight: 600;
+}
+
+.sum-text {
+  color: rgba(33, 33, 33, 0.5);
+}
+
+.sum-dates-in {
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.sum-dates-in-date {
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.sum-dates-in-clock {
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.sum-dates-out {
+  display: flex;
+  padding-top: 6px;
+  flex-wrap: wrap;
+}
+
+.sum-dates-out-date {
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.sum-dates-out-clock {
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.sum-dates img {
+  width: auto;
+  height: 15px;
+  padding-right: 5px;
+  max-width: 100%;
+}
+
+.img-sum {
+  width: 35px;
+}
+
+.sum-matricula {
+  display: flex;
+  align-items: center;
+}
+
+.sum-matricula img {
+  padding-right: 10px;
+}
+
+/* configuración al reducir pantalla tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-left {
+    display: none;
+  }
+
+  .form-summary {
+    margin-right: auto;
+  }
+}
+
+/* configuración al reducir pantalla movil */
+@media (max-width: 768px) {
+  .container-left {
+    display: none;
+  }
+
+  .container-mid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .container-right {
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    border-left: none;
+
+  }
+
+  .payment {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .form-summary {
+    margin-right: auto;
+  }
+
+}

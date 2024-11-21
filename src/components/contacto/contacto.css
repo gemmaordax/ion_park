@@ -1,0 +1,143 @@
+/* ----- CONTACTO -----*/
+
+.contacto {
+  margin: 100px 20px 0px 20px;
+  display: flex;
+  height: 100vh;
+  text-align: justify;
+}
+.formulario-contacto {
+  margin-left: 50px;
+  flex: 1;
+  padding: 20px;
+}
+.formulario-contacto h2 {
+  text-align: left;
+}
+
+.imagen-contacto {
+  margin-top: 80px;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.imagen-contacto img {
+  background: rgba(33, 33, 33, 0.492);
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.form-contacto {
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+  padding: 0;
+}
+
+.form-contacto fieldset {
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  border-radius: 15px;
+  margin-bottom: 16px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.form-contacto legend {
+  padding: 0px 10px 0px 10px;
+  font-family: var(--font-family-title);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.form-contacto label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: calc(100% - 16px);
+  padding-bottom: 8px;
+  box-sizing: border-box;
+
+  font-family: var(--font-family-text);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  padding-left: 10px;
+}
+
+.form-contacto button {
+  background-color: transparent;
+  border: 2px solid var(--red);
+  color: var(--red);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px 5px 25px;
+  margin-top: 25px;
+}
+
+.form-contacto button:hover {
+  background-color: var(--red);
+  color: white;
+}
+
+/* configuración al reducir pantalla tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contacto {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .imagen-contacto {
+    margin: 0 !important;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .imagen-contacto img {
+    height: 250px;
+  }
+  .formulario-contacto {
+    margin: 0 !important;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+/* configuración al reducir pantalla movil */
+@media (max-width: 768px) {
+  .contacto {
+    margin-top: 130px;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .imagen-contacto {
+    margin: 0 !important;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .formulario-contacto {
+    margin: 0 !important;
+    flex-direction: column;
+    transform: scale(0.9);
+    padding: 0;
+  }
+
+  .imagen-contacto img {
+    height: 250px;
+  }
+  .formulario-contacto h2 {
+    font-size: 6vw;
+  }
+  
+}

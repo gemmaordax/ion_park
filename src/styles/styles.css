@@ -1,0 +1,64 @@
+/* ----- GENERAL STYLES -----*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Textos */
+h1 {
+    font-family: var(--font-family-title);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100px;
+  }
+  h2 {
+    font-family: var(--font-family-title);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+  }
+  h3 {
+    font-family: var(--font-family-text);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+  }
+  h4 {
+    font-family: var(--font-family-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+  }
+  h5 {
+    font-family: var(--font-family-text);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .white_word {
+    color: var(--white);
+  }
+  .red_word {
+    color: var(--red);
+  }
+  
+
+/* body */
+body {
+    background-color: var(--white);
+    color: var(--text-color);
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+  
+

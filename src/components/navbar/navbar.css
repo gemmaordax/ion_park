@@ -1,0 +1,91 @@
+/* ----- NAVBAR -----*/
+
+
+/* barra */
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 93px;
+  left: 0px;
+  top: 0px;
+  padding-left: 50px;
+  padding-right: 30px;
+  background: rgba(249, 249, 249, 0.25);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+}
+
+/* logo ionpark */
+.navbar-left {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+/* menu navbar */
+.navbar-right {
+  position: absolute;
+  right: 0;
+  justify-content: flex-end;
+  font-family: var(--font-family-text);
+  color: rgba(33, 33, 33, 0.75);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+
+.navbar-right li {
+  display: inline-block;
+  margin-right: 50px;
+  flex: 0 0 calc(33.33% - 10px);
+}
+
+/* menu activado */
+.active {
+  color: var(--red);
+}
+
+/* idioma */
+.language-content {
+  display: flex;
+  align-items: center;
+}
+.language-content img {
+  margin-right: 5px;
+  width: 9px;
+  height: 9px;
+}
+
+.nav-selected {
+  color: var(--red);
+  font-weight: 700;
+}
+
+/* configuración al reducir pantalla movil */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: 130px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    
+  }
+  .navbar-left {
+    margin-top: 20px;
+    position:absolute;   
+  }
+  .navbar-right {
+
+    position: static;
+    margin: 80px auto;
+  }
+  .navbar-right li {
+    margin-right: 7vw;
+  }
+}

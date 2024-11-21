@@ -1,0 +1,87 @@
+/* ----- EMPRESA -----*/
+
+.empresa {
+  margin: 100px 20px 0px 20px;
+  display: flex;
+  height: 100vh;
+  text-align: justify;
+}
+.texto-empresa {
+  margin-left: 50px;
+  flex: 1;
+  padding: 20px;
+}
+.texto-empresa p {
+  margin-top: 30px;
+  font-family: var(--font-family-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.imagen-empresa {
+  margin-top: 80px;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.imagen-empresa img {
+  background: rgba(33, 33, 33, 0.492);
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* configuración al reducir pantalla tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .empresa {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .imagen-empresa {
+    margin: 0 !important;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .texto-empresa {
+    margin: 0 !important;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .imagen-empresa img {
+    height: 250px;
+  }
+}
+
+/* configuración al reducir pantalla movil */
+@media (max-width: 768px) {
+  .empresa {
+    margin-top: 130px;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .imagen-empresa {
+    margin: 0 !important;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .texto-empresa {
+    margin: 0 !important;
+    flex-direction: column;
+  }
+  .texto-empresa h2 {
+    font-size: 6vw;
+  }
+  .texto-empresa h3 {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  .imagen-empresa img {
+    height: 250px;
+  }
+}
